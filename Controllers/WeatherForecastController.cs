@@ -29,4 +29,9 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+    [HttpGet(Name = "GetMyName")]
+    public ActionResult GetName()
+    {
+        return Ok(new { name = "Chris Klanderman" });
+    }
 }
